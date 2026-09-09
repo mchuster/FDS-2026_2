@@ -29,7 +29,7 @@ public class Controller {
         return this.listaLivros;
     }
 
-    @PostMapping("/livros")
+    @PostMapping("/novolivro")
     @CrossOrigin(origins = "*")
     public void adicionaLivro(@RequestBody Livro livro){
         this.listaLivros.add(livro);
